@@ -1,0 +1,35 @@
+
+ALGORITHM card_sort
+
+VAR
+ arr: array of  INTEGERS
+ n, i, j, current_card: INTEGER
+
+BEGIN
+//  Input 
+ Write("Enter the number of cards: ", n)
+ Write("Enter the cards separated by spaces: ", arr)
+
+
+//processing
+FOR i FROM 1 TO n-1 DO
+   
+    current_card := arr[i]
+
+    
+    j := i - 1
+
+    WHILE j >= 0 AND arr[j] > current_card DO
+         
+        arr[j + 1] := arr[j]
+
+       
+        j := j - 1
+    END_WHILE
+
+    
+    arr[j + 1] := current_card
+END_FOR
+
+   //  Output 
+   OUTPUT "Sorted cards: ", arr
