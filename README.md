@@ -1,4 +1,4 @@
-sorting and searching algorithm checkpoint
+
 
 Initialization: Declare variables and input the array of unsorted cards.
 Sorting Loop: Iterate through each card in the array.
